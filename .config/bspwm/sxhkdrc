@@ -10,21 +10,21 @@ super + Return
 	bspterm
 
 # Terminal (floating)
-super + shift + Return
-	bspterm --float
+#super + shift + Return
+#	bspterm --float
 
 # Terminal (fullscreen)
-super + t
-	bspterm --full
+#super + t
+#	bspterm --full
 
 ##---------- Rofi Launcher & Menus ----------##
 
 # Rofi App Launcher
-alt + F1
+super + d
 	sh ~/.config/bspwm/rofi/bin/launcher
 
 # Rofi Network Menu
-super + n
+alt + n
 	nmd
 
 # Rofi Themes Menu
@@ -60,12 +60,12 @@ Print
 	takeshot --now
 	
 # Take screenshot in 5 second
-alt + Print	
-	takeshot --in5
+#alt + Print	
+#	takeshot --in5
 
 # Take screenshot in 10 second
-shift + Print	
-	takeshot --in10
+#shift + Print	
+#	takeshot --in10
 
 # Take screenshot of active window
 ctrl + Print
@@ -96,8 +96,10 @@ XF86Audio{Next,Prev,Play,Stop}
 ##---------- Bspwm ----------##
 
 # Close App
-super + {_,shift + }c
-	bspc node -{c,k}
+#super + q
+#	bspc node -{c,k}
+super + {_,shift + }q
+    bspc node -{c,k}
 
 # Reload Keybindings
 super + Escape
